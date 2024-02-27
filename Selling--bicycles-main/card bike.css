@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.container{
+    width: 1000px;
+    height:auto;
+    /* background: linear-gradient(100deg, rgb(137, 75, 196), rgb(60, 198, 223)); */
+    margin: auto;
+    display: flex;
+}
+.bloo{
+flex: 1;
+border: 1px solid rgba(149, 149, 149, 1);
+border-radius: 30px;
+height: auto;
+overflow: hidden;
+padding: 20px;
+
+
+}
+.bloo1{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.bloo1 img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin-left:5%;
+    
+}
+.bloo1 img:hover{
+    scale:103%;  
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+.bloo2{
+    margin-top: -2%;
+    width: 100%;
+    height: auto;
+}
+.bloo3{
+margin-top: -5%;
+width:100%;
+height:auto;
+justify-content: space-between;
+line-height: 70px;
+display: flex;
+}
+.bloo3-1{
+    font-size: 32px;
+    color: black;
+    text-align: left;
+    margin-left: 4%;
+    margin-top: -5%;
+    
+}
+.bloo3-2{
+    font-size: 32px; font-weight: lighter;
+    color: black;
+    text-align: right;
+    margin-right: 4%;
+    margin-top: -5%;   
+}
+.text{
+    display: inline-block;
+    position: relative;
+   
+}
+.stripe{
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    width: 102%;
+    height: 4px;
+    background-color: black; 
+}
+
+
+
+    
+   

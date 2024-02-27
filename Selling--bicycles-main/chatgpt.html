@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal Stripe in Middle of Word</title>
+<style>
+  .word-with-stripe {
+    display: inline-block;
+    position: relative;
+  }
+  .stripe {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Adjust the thickness of the stripe */
+    background-color: black; /* Adjust the color of the stripe */
+  }
+</style>
+</head>
+<body>
+  <p>This is a <span class="word-with-stripe">word<span class="stripe"></span></span> with a horizontal stripe in the middle.</p>
+</body>
+</html>

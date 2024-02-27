@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/bike logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Sell Bicycle</title>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <!-- <div class="logo">
+          <h1 style="color: aliceblue;">Group3</h1>
+          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-bars"></i>
+        </div> -->
+      <div class="menu">
+       <nav>
+        <input type="checkbox" id="check" name="value"> 
+        <label for="check" id="checkbtn">
+            <i style="color: aliceblue;" class="fa-solid fa-bars"></i>
+        </label>
+        <!-- <label for="check" id="cancel">
+            <i style="color: white;" class="fa-solid fa-xmark"></i>
+      git   </label> -->
+        <div class="logo">
+            <img style="width: 80px; margin-left: 5px;" src="images/bike logo.jpg" alt="">
+        </div>
+           <ul>
+               <li><a href="" class="active">Home</a></li>
+               <li><a href="p.html">Bike</a></li>
+               <li><a href="about.html">About Us</a></li>
+           </ul>
+       </nav>
+      </div>
+   </header>
+     </div>
+     
+    <section class="home-container">
+        <div class="content">
+        <h4>Zero Emissions</h4>
+        <h1>Pedaling means making a <br>
+            real contribution to cleaner <br>
+             air.</h1>
+            <button class="btn">Shop Now</button>
+
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="content1">
+            <h1>New Arrivals
+             <i class="fa-solid fa-circle-chevron-left"></i> 
+             <i class="fa-solid fa-circle-chevron-right"></i>
+            </h1>
+      
+    </div>
+    <swiper-container class="mySwiper" slides-per-view="3" centered-slides="true" space-between="30" pagination="true"
+    pagination-type="fraction" navigation="true">
+    <swiper-slide> 
+        <div class="bloo">
+            <div class="bloo1"><img src="images/bick1-removebg-preview.png" alt=""></div> 
+            <div class="bloo2"><h5 style="font-size: 28px; font-weight: lighter; margin-left: 28%;">Road bike - Specialized</h5></div>
+            <div class="bloo3">
+                <div class="bloo3-1">
+                    <h4>Diverge Elite E5 <br> <span class="text" style="color: rgba(149, 149, 149, 1);">$2,000<span class="stripe"></span></span> </h4>
+                </div>
+                <div class="bloo3-2"><h4> 
+                   New <br> $1,799.99 </h4></div>
+    
+            </div>
+        </div>
+    </swiper-slide>
+    
+    <swiper-slide> 
+        <div class="bloo">
+            <div class="bloo1"><img style="width: 450px; height: 280px;" src="images/image_3-removebg-preview.png" alt=""></div> 
+            <div class="bloo2"><h5 style="font-size: 28px; font-weight: lighter; margin-left: 28%;">Mountain Bike - Specialized</h5></div>
+            <div class="bloo3">
+                <div class="bloo3-1">
+                    <h4>Rockhopper 27.5  <br> <span class="text" style="color: rgba(149, 149, 149, 1);">$650<span class="stripe"></span></span> </h4>
+                </div>
+                <div class="bloo3-2"><h4> 
+                   Used <br> $599.99 </h4></div>
+    
+            </div>
+        </div>
+    </swiper-slide>
+
+    <swiper-slide> 
+        <div class="bloo">
+            <div class="bloo1"><img style="width: 450px; height: 325px;" src="images/image 19.svg" alt=""></div> 
+            <div class="bloo2"><h5 style="font-size: 28px; font-weight: lighter; margin-left: 4%;">Hybird - Specialized</h5></div>
+            <div class="bloo3">
+                <div class="bloo3-1">
+                    <h4>Turbo Vado SL <br> <span class="text" style="color: rgba(149, 149, 149, 1);">$5,250<span class="stripe"></span></span> </h4>
+                </div>
+                <div class="bloo3-2"><h4> 
+                   New <br> $5,150.00 </h4></div>
+    
+            </div>
+        </div>
+    </swiper-slide>
+
+    <swiper-slide> 
+        <div class="bloo">
+            <div class="bloo1"><img src="images/image 3.svg" alt=""></div> 
+            <div class="bloo2"><h5 style="font-size: 28px; font-weight: lighter; margin-left: 4%;">Roadbike - Polygon</h5></div>
+            <div class="bloo3">
+                <div class="bloo3-1">
+                    <h4>Strattos S7D <br> <span class="text" style="color: rgba(149, 149, 149, 1);">$2,000<span class="stripe"></span></span> </h4>
+                </div>
+                <div class="bloo3-2"><h4> 
+                   New <br> $1,450.00 </h4></div>
+    
+            </div>
+        </div>
+    </swiper-slide>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <script>
+    const swiperEl = document.querySelector('swiper-container');
+    const swiper = swiperEl.swiper;
+
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+      .querySelector(".prepend-2-slides")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide([
+          '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>",
+          '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>",
+        ]);
+      });
+    document
+      .querySelector(".prepend-slide")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide(
+          '<swiper-slide>Slide ' + --prependNumber + "</swiper-slide>"
+        );
+      });
+    document
+      .querySelector(".append-slide")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide(
+          '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>"
+        );
+      });
+    document
+      .querySelector(".append-2-slides")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide([
+          '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>",
+          '<swiper-slide>Slide ' + ++appendNumber + "</swiper-slide>",
+        ]);
+      });
+  </script>
+</swiper-container>
+</section>
+  <section>
+      <div class="image-box">
+          <div class="custom-shape-divider-bottom-1707882186">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+              </svg>
+          </div>
+          <div class="text">
+              <div class="text-1">
+              <h1>Ready to ride?</h1><br>
+              <p>Ready to ride? We'll give our top  <br>
+                gallery recommendations!</p> <br>
+                  <button class="button1">Shop Now</button>
+              </div>
+          </div>
+  
+      </div>
+      <div class="box">
+          <p>Privacy</p>
+          <p>Terms & Condition</p>
+          <p>TermofUse</p>
+      </div>
+       <div class="box-1">
+        <p>HELLO C1-WMAD</p>
+      </div> 
+  </section>
+</body>
+</html>

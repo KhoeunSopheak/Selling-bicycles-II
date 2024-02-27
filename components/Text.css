@@ -1,0 +1,13 @@
+.content{
+    width: 800px;
+    height: 600px;
+    gap: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+.content h1{
+    font-size: 3rem;
+}
+.content p{
+    font-size: 20px;
+}

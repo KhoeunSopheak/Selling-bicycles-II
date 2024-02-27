@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(75, 72, 72);
+    
+}
+button{
+    display: flex;
+    width: 15%;
+    height: 65px;
+    margin-top: 25%;
+    margin-left: 40%;
+}
+.btn{
+    background-color: #e7e7e7;
+    padding: 15px 80px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+.btn:hover{
+    background-color: aqua;
+    color: white;
+}

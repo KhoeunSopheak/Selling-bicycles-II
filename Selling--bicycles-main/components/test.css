@@ -1,0 +1,117 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-left: 10%;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+swiper-container {
+  width: 90%;
+  height: 650px;
+  margin: 5rem;
+}
+.bloo{
+    flex: 1;
+    height: auto;
+    overflow: hidden;
+    padding: 20px;
+    
+    
+    }
+    .bloo1{
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    
+    .bloo1 img{
+        width: 95%;
+        height: 95%;
+        object-fit: cover;
+        margin-left:5%;
+    
+    }
+    .bloo1 img:hover{
+        scale:103%;
+        transition: 0.3s;
+        cursor: pointer;
+    
+    }
+    .bloo2{
+        margin-top: -2%;
+        width: 100%;
+        height: auto;
+        margin-left: -7.5rem;
+    }
+    .bloo3{
+    margin-top: -5%;
+    width:100%;
+    height:auto;
+    justify-content: space-between;
+    line-height: 70px;
+    display: flex;
+    }
+    .bloo3-1{
+        font-size: 32px;
+        color: black;
+        text-align: left;
+        margin-left: 4%;
+        margin-top: -5%;
+    
+    }
+    .bloo3-2{
+        font-size: 2rem; font-weight: lighter;
+        color: black;
+        text-align: right;
+        margin-right: 4%;
+        margin-top: -5%;
+    }
+    .text{
+        display: inline-block;
+        position: relative;
+    
+    }
+    .stripe{
+        position: absolute;
+        bottom: 45%;
+        left: 0;
+        width: 102%;
+        height: 4px;
+        background-color: black; 
+    }
+    

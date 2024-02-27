@@ -1,0 +1,453 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@1&family=Plus+Jakarta+Sans:wght@200&display=swap');
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    background-color:black;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    float: left;
+}
+.logo{
+    display: flex;
+    color: #fff;
+    margin-top: 15px;
+    transition: 0.5s ease; 
+}
+.logo img:hover{
+    transform: scale(1.1);
+}
+.menu{
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.menu ul{
+    float: right;
+    margin-right:150px ;
+    margin-top: -45px; 
+
+}
+.menu ul li{
+  display: inline-block;
+} 
+.menu ul li a{
+    color: white;
+    font-size: 22px;
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   text-decoration: none;
+   padding: 0px 30px;
+   transition: 0.3s ease; 
+
+}
+.menu ul li a:hover{
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+  left: 0%;
+  width: 100%;
+  background-color: rgb(148, 101, 224);
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px;
+  padding: 15px 25px;
+}
+.menu ul li .active{
+    color: white;
+}
+#check{
+    display: none;
+}
+label, #checkbtn
+label, #cancel{
+    font-size: 2rem;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+    
+}
+@media screen and (max-width:600px){
+    .menu ul li{
+        line-height: 2rem;
+        margin-top: 50px;
+        display: block;
+        text-align: start;
+    }
+    ul{
+       position: fixed;
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(143, 11, 219);
+        left: -115%;
+        top: 15%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    label, #checkbtn
+    label, #cancel{
+        display: flex;
+        margin-top: 15px;
+    }
+    label, #cancel:hover{
+        display: flex;
+    }
+ 
+}
+.home-container{
+    background-image: url(images/Frame\ 35.svg);
+    width: 100%;
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    
+}
+.home-img{
+    display: flex;
+   
+}
+.home-img img{
+    width: 100%;
+}
+.content{
+    float: right;
+    margin-right: 5rem;
+    margin-top: 21%;
+    
+}
+.content h4{
+    font-size: 2rem;
+    display: flex;
+    margin-top: -0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.content h1{
+    display: flex;
+    font-size: 3.5rem;
+    margin-top: -1rem;
+    line-height: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    display: flex;
+    width: 41%;
+    height: 60px;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+.btn{
+    padding: 15px 90px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    border-radius: 30px;
+    border: 2px solid rgb(223, 222, 222);
+}
+.btn:hover{
+    background-color: #930de0;
+        color: white;
+        box-shadow: 0px 0px 25px;
+}
+.content1{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    float: left;
+    margin-left: 8%;
+    
+}
+.slider{
+    position: relative;
+    margin-top: -2%;
+}
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  swiper-container {
+    width: 90%;
+    height: 600px;
+    margin: 5rem;
+
+    
+  }
+  .bloo{
+      flex: 1;
+      height: auto;
+      overflow: hidden;
+      padding: 20px;
+      
+      
+      }
+      .bloo1{
+          width: 100%;
+          height: auto;
+      
+      }
+      
+      
+      .bloo1 img{
+          width: 95%;
+          height: 95%;
+          object-fit: cover;
+          margin-left:5%;
+      
+      }
+      .bloo1 img:hover{
+          scale:103%;
+          transition: 0.3s;
+          cursor: pointer;
+      
+      }
+      .bloo2{
+          margin-top: -2%;
+          width: 100%;
+          height: auto;
+          margin-left: -7.5rem;
+      }
+      .bloo3{
+      margin-top: -5%;
+      width:100%;
+      height:auto;
+      justify-content: space-between;
+      line-height: 70px;
+      display: flex;
+      }
+      .bloo3-1{
+          font-size: 32px;
+          color: black;
+          text-align: left;
+          margin-left: 0%;
+          margin-top: -5%;
+          font-family: 'Plus Jakarta Sans', sans-serif;
+      
+      }
+      .bloo3-1 span{
+        margin-left: 0%;
+      }
+      .bloo3-2{
+          font-size: 2rem; font-weight: lighter;
+          color: black;
+          text-align: right;
+          margin-right: 4%;
+          margin-top: -5%;
+      }
+      .text{
+          display: inline-block;
+          position: relative;
+      
+      }
+      .stripe{
+          position: absolute;
+          bottom: 45%;
+          left: 0;
+          width: 102%;
+          height: 4px;
+          background-color: black; 
+      }
+    .image-box{
+        width: 100%;
+        height: 890px;
+        background-image: url(images/back.webp);
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        margin-top: 3%;
+    }
+    .text{
+        width: 40%;
+        height: 60%;
+        margin-left: 100px;
+        color:white;
+        align-items: center;
+        display: flex;
+        font-size: 25px;
+    }
+    
+    .button1{
+        display: flex;
+        width: 75%;
+        height: 60px;
+        padding: 15px 95px;
+        background-color: white;
+        border-radius: 30px;
+        font-size: 22px;
+        border: 2px solid white;
+    
+    }
+    .button1:hover{
+        background-color: #930de0;
+        color: white;
+        box-shadow: 0px 0px 25px;
+        
+    }
+    .box{
+        width: 100%;
+        height: 150px;
+        background-color: black;
+        position: absolute;
+        margin-top: 51%;
+       align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        color: aliceblue;
+        font-size: 25px;
+    
+    
+    }
+    .box-1{
+        width: 100%;
+        height: 250px;
+        background-color: black;
+        font-size: 25px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: white;
+        position: absolute;
+        margin-top: 58%;
+    
+    
+    }
+    
+    
+    .custom-shape-divider-bottom-1707882186 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    
+    }
+    
+    .custom-shape-divider-bottom-1707882186 svg {
+        position: relative;
+        display: block;
+        width: calc(136% + 1.3px);
+        height: 105px;
+     
+    }
+    
+    .custom-shape-divider-bottom-1707882186 .shape-fill {
+        fill: #000000;
+    }
+    @media  screen and (max-width:600px) {
+        .home-container{
+            width: 100%;
+            height: 150vw;
+        }
+        .content{
+            top: 0;
+            left: 0;
+            margin-top: 7.5rem;
+
+        }
+        .content h1{
+            font-size: 22px;
+            line-height: 2rem;
+
+        }
+        .content h4{
+            font-size: 20px;
+            line-height: 1.5rem;
+
+        }
+        .btn{
+            width: 65%;
+            height: 20%;
+            font-size: 15px;
+            padding: 15px 55px;
+            margin-top: 3rem;
+            
+        }
+        .image-box{
+            width: 100%;
+            height: 100vw;
+        }
+        .box-1{
+            margin-top: 150%;
+        }
+        .box{
+            margin-top: 103%;
+            display: block;
+            height: 40%;
+            text-align: center;
+        }
+        .text{
+            font-size: 23px;
+            margin-top: 25%;
+            display: inline;
+            text-align: center;
+            
+        }
+        .button1{
+            width: 180px;
+            height: 50px;
+            padding: 13px 45px;
+            margin-left: 15%;
+            font-size: 18px;
+            
+
+        }
+        .menu ul li a{
+            font-size: 15px;
+            display: inline;
+        }
+        .logo i{
+            display: flex;
+        }
+        .slider{
+            width: 300%;
+            height: 130vw;
+            margin-top: 5px;
+            margin-left: auto;
+        }
+        .bloo3-1{
+            font-size: 28px;
+        }
+        .bloo3-2{
+            font-size: 25px;
+        }
+        .content1{
+            margin: -6rem 0;
+            font-size: 25px;
+            margin-left: 10px;
+        } 
+
+        
+    }
+    
