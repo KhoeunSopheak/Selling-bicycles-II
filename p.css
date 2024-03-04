@@ -94,6 +94,9 @@ label, #cancel{
     cursor: pointer;
     display: none;
     transition: 0.5s;
+    border: 2px solid black;
+    border-radius: 10px;
+
 
 }
 @media screen and (max-width:600px){
