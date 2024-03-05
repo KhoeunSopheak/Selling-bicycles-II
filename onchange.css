@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   
   h2 {
     margin-bottom: 10px;
@@ -12,7 +8,7 @@
     margin-bottom: 10px;
   }
   
-  .container {
+  .container1 {
     margin: 20px;
     max-width: 600px;
     display: flex;
@@ -20,14 +16,14 @@
 
   }
   
-  .container nav {
+  .container1 nav {
     display: flex;
     flex-direction: column;
     gap: 16px;
     
   }
   
-  .filter-container {
+  .filter-container1 {
     width: 100px;
     display: flex;
     flex-direction: row;

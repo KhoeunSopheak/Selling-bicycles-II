@@ -283,12 +283,12 @@ function getBicyclesByType(bicycleType) {
 
 function display3Bicycles(elementId, data) {
   let listIndex = 0;
-  let container = document.getElementById(elementId);
+  let container1 = document.getElementById(elementId);
   // clear the previous data
-  container.innerHTML = "";
+  container1.innerHTML = "";
 
   for (let index = 1; index <= data.length; index++) {
-    container.innerHTML += createBicycleCardHTML(
+    container1.innerHTML += createBicycleCardHTML(
       data[listIndex]
     );
     listIndex++;
