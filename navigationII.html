@@ -28,8 +28,8 @@
                   <div class="form-control">
                       <label for="class">Class</label>
                       <select name="class" id="class"></select>
-                  </div>
-                  -->
+                  </div> -->
+                 
                </div>
                <ul>
                 <div class="search-box">
@@ -47,70 +47,6 @@
        </header>
        </section>
        <script src="searchbtn.js"></script>
-       <script>
-        const types = ["Select Type", "Road", "Mountain", "MMX",];
-        const classs = ["Select Class", "WMAD", "HR", "SALE" , "FILM"];
-        const rooms = ["Select Room", "F-11", "F-12", "F-13" , "F-15"];
-        const ages = [ "Select Age", 20, 21, 22, 19, 23,]
-
-
-        document.getElementById("type").style.color = "blue";
-
-        const typeSelect = document.getElementById("type");
-        for (let i = 0; i < types.length; i++) {
-  typeSelect.innerHTML += `<option value="${types[i]}">${types[i]}</option>`;
-}
-
-
-const classSelect = document.getElementById("class");
-for (let i = 0; i < classs.length; i++) {
-  classSelect.innerHTML += `<option value="${classs[i]}">${classs[i]}</option>`;
-}
-
-
-const ageSelect = document.getElementById("age");
-for (let i = 0; i < ages.length; i++) {
-  ageSelect.innerHTML += `<option value="${ages[i]}">${ages[i]}</option>`;
-}
-
-
-const roomSelect = document.getElementById("room");
-for (let i = 0; i < rooms.length; i++) {
-  roomSelect.innerHTML += `<option value="${rooms[i]}">${rooms[i]}</option>`;
-}
-
-
-typeSelect.addEventListener("change", filterType);
-classSelect.addEventListener("change", filterClass);
-ageSelect.addEventListener("change", filterAge);
-roomSelect.addEventListener("change", filterRoom);
-
-
-
-function filterType(event) {
-  let filterStudents = [];
-  for (let i = 0; i < students.length; i++) {
-    if (students[i].type.toUpperCase() === typeSelect.value.toUpperCase()) {
-      filterStudents.push(students[i]);
-    }
-  }
-
-  const studentList = document.getElementById("student-list");
-  var contentHTML = "";
-  for (let i = 0; i < filterStudents.length; i++) {
-    contentHTML += `
-      <div class="student-card">
-        ${filterStudents[i].fullName}
-      </div>
-    `;
-  }
-  studentList.innerHTML = `
-    <div>Number of ${genderSelect.value}: ${filterStudents.length}</div>
-    ${contentHTML}
-  `;
-}
-
-       </script>
    
 </body>
 </html> 
